@@ -1,0 +1,9 @@
+{
+    "name": "Currency Converter",
+    "short_name": "CC",
+    "start_url": "/index.html",
+    "gcm_sender_id": "103953800507",
+    "display": "fullscreen",
+    "background_color": "#000",
+    "theme_color": "#000"
+}
