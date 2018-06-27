@@ -1,6 +1,15 @@
 {
     "name": "Currency Converter",
     "short_name": "CC",
+    "icons ": [{
+        "src": "img/icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }, {
+        "src": "img/icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }],
     "start_url": "/index.html",
     "gcm_sender_id": "103953800507",
     "display": "fullscreen",
