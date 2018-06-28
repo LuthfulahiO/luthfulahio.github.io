@@ -1,9 +1,9 @@
 let cacheName = 'currency-converter';
 let filesToCache = [
     '/',
-    '../index.html',
-    '../css/bootstrap.css',
-    '..img/icon.png'
+    '/index.html',
+    '/css/bootstrap.css',
+    'img/icon.png'
 ];
 
 self.addEventListener('install', (e) => {
