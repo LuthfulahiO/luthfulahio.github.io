@@ -10,25 +10,25 @@ const autoConvert = () => {
         .then((res) => res.json())
         .then((res) => {
             const keys = Object.entries(res);
-            const xxx = valueToBeConverted * keys[0][1].val;
+            const xxx = Number(valueToBeConverted) * keys[0][1].val;
             result.innerText = xxx.toLocaleString("us");
         });
 }
-const url = "https://free.currencyconverterapi.com/api/v5/countries"
+const url = "https://free.currencyconverterapi.com/api/v5/currencies";
 fetch(url)
     .then((res) => res.json())
     .then((res) => {
         const currencies = res.results;
         const currenciesArray = Object.entries(currencies);
         currenciesArray.forEach(element => {
-            let country = element[1].name;
-            let id = element[1].currencyId;
+            // let country = element[1].name;
+            let id = element[1].id;
             let name = element[1].currencyName;
             let symbolx = element[1].currencySymbol;
             if (element[1].currencySymbol == undefined) {
                 symbolx = "";
             }
-            fillin[0].innerHTML += `<option value="${id}">${country} - ${name} - ${symbolx}</option>`;
-            fillin[1].innerHTML += `<option value="${id}">${country} - ${name} - ${symbolx}</option>`;
+            fillin[0].innerHTML += `<option value="${id}">${name} - ${symbolx}</option>`;
+            fillin[1].innerHTML += `<option value="${id}">${name} - ${symbolx}</option>`;
         });
     });
