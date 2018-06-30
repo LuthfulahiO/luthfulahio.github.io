@@ -1,4 +1,4 @@
-let cache = "cc";
+let cache = "converter_currency";
 let version = "1.1.0";
 let cacheName = `${cache}_${version}`;
 let filesToCache = [
