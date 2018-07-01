@@ -5,10 +5,11 @@ let filesToCache = [
     "/currencyconverter/",
     "/currencyconverter/index.html",
     "./manifest.json",
-    "./img/icon.png",
+    "./img/icon-192.png",
+    "./img/icon-152.png",
     "./css/bootstrap.css",
     "./js/app.js",
-    // "./js/idb.js",
+    "./js/idb.js",
     "https://free.currencyconverterapi.com/api/v5/currencies"
 ];
 

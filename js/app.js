@@ -64,7 +64,7 @@ const autoConvert = () => {
                         rate = keys[0][1].val;
                         const xxx = Number(valueToBeConverted) * rate;
                         result.innerText = xxx.toLocaleString("us");
-                        successmessage.innerText = `1 ${from} is equivalent to 1 ${to}`;
+                        successmessage.innerText = `1 ${from} is equivalent to ${rate} ${to}`;
                         storeRate(query, rate);
                     })
                     .catch(err => {
