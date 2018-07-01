@@ -33,6 +33,7 @@
         </div>
         <div class="col-md-2 doThis" id="iconsh">
             <i class="fa fa-exchange-alt"></i>
+            <p id="successmessage"></p>
         </div>
         <div class="col-md-5 doThis well well-lg">
             <label for="to">To</label>
@@ -51,9 +52,11 @@
         <span class="btn btn-primary" id="convert">Convert!</span>
     </div> -->
     <div class="thumbnail text-center">
+        <p id="errormessages"></p>
         <h4 id="result">Converted Value to display here</h4>
     </div>
-    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/idb.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register(`${window.location.pathname}sw.js`)
