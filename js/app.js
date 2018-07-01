@@ -82,7 +82,7 @@ fetch(url)
     .then((res) => res.json())
     .then((res) => {
         const currencies = res.results;
-        const currenciesArray = Object.entries(currencies);
+        const currenciesArray = Object.entries(currencies).sort();
         currenciesArray.forEach(element => {
             // let country = element[1].name;
             let id = element[1].id;
