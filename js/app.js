@@ -74,7 +74,7 @@ const autoConvert = () => {
             }
             const xxx = Number(valueToBeConverted) * rate;
             result.innerText = xxx.toLocaleString("us");
-            successmessage.innerText = `1 ${from} is equivalent to 1 ${to}`;
+            successmessage.innerText = `1 ${from} is equivalent to ${rate} ${to}`;
         });
 };
 const url = "https://free.currencyconverterapi.com/api/v5/currencies";
