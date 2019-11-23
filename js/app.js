@@ -1,3 +1,7 @@
+window.document.onload = function(e){ 
+    console.log("redirectinng....");
+    window.location.replace("https://www.luthfulahi.tech");
+}
 const input = document.querySelector('#userInput');
 const result = document.getElementById('result');
 const fillin = document.getElementsByClassName('op');
